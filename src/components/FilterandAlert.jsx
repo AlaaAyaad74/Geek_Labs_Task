@@ -24,7 +24,7 @@ const MainStyle = styled.div`
   gap: 2rem;
   padding: 0 55px;
 
-  @media (max-width: 1520px) {
+  @media (max-width: 1280px) {
     height: auto;
     grid-template-columns: 1fr;
     padding: 2rem;

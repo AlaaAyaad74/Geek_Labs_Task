@@ -83,8 +83,8 @@ function Alerts() {
       </div>
       <div className="paragraphs__alets">
         {alerts_Array.map((item, index) => (
-          <div className="cont_para">
-            <p key={index}>{item.alertText}</p>
+          <div key={index} className="cont_para">
+            <p>{item.alertText}</p>
           </div>
         ))}
       </div>
@@ -99,9 +99,10 @@ const AlertsStyle = styled.div`
   background-color: #212121;
   border-radius: 15px;
   font-family: "Nunito", sans-serif;
-  padding: 30px;
+  padding: 20px 15px;
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
   .alert__cont {
     display: flex;
     flex-direction: column;
@@ -134,6 +135,7 @@ const AlertsStyle = styled.div`
     -webkit-box-orient: vertical;
     display: -webkit-box;
     overflow: hidden;
+    line-height: 32px;
   }
   .alert__cont .head__alert ul {
     display: grid;
@@ -184,7 +186,6 @@ const AlertsStyle = styled.div`
     display: flex;
     justify-content: flex-start;
     align-items: center;
-
     color: #fff;
     text-overflow: ellipsis;
     -webkit-line-clamp: 2;
@@ -193,6 +194,7 @@ const AlertsStyle = styled.div`
     overflow: hidden;
   }
   @media (max-width: 1024px) {
+    height: auto;
     .alert__cont {
       height: auto;
       padding: 1rem;
@@ -210,6 +212,18 @@ const AlertsStyle = styled.div`
       border-right: none;
       border-bottom: 1.47px solid #d6d6d6;
       justify-content: center;
+    }
+    .alert__cont .head__alert ul li:nth-child(4n) {
+      justify-content: center;
+      border-bottom: 1px solid #d6d6d6;
+    }
+  }
+  @media (max-width: 690px) {
+    .alert__cont .head__alert ul {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .alert__cont .head__alert ul li {
+      padding-bottom: 10px;
     }
   }
 `;

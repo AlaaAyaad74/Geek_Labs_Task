@@ -31,11 +31,11 @@ export default styled.div`
     border-radius: 19px;
     font-weight: 400;
     box-sizing: border-box;
-    font-family: "Nunito Sans", sans-serif !important;
+    font-family: "Nunito", sans-serif;
   }
   input::placeholder {
     font-weight: 400;
-    font-family: "Nunito Sans", sans-serif !important;
+    font-family: "Nunito", sans-serif;
   }
   .icon {
     fill: #554db7;
@@ -51,7 +51,8 @@ export default styled.div`
     justify-content: end;
     width: 100%;
     align-items: center;
-    font-family: "Nunito Sans", sans-serif !important;
+    /* font-family: "Nunito Sans", sans-serif !important; */
+    font-family: "Nunito", sans-serif;
   }
   .link__notify .notify__num {
     background-color: green;
@@ -65,7 +66,8 @@ export default styled.div`
     font-weight: 700;
     border-radius: 12px;
     text-align: center;
-    font-family: "Nunito Sans", sans-serif !important;
+    /* font-family: "Nunito Sans", sans-serif !important; */
+    font-family: "Nunito", sans-serif;
   }
   .user__info {
     width: 169px;
@@ -85,7 +87,8 @@ export default styled.div`
   }
   .user__info .text p {
     margin: 0;
-    font-family: "Nunito Sans", sans-serif !important;
+    /* font-family: "Nunito Sans", sans-serif !important; */
+    font-family: "Nunito", sans-serif;
   }
   .angle__down {
     display: flex;

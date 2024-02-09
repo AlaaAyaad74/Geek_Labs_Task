@@ -275,7 +275,7 @@ const FilterStyle = styled.div`
     border-radius: 14px;
     font-family: "Inter", sans-serif !important;
   }
-  @media (max-width: 1520px) {
+  @media (max-width: 1280px) {
     display: flex;
     flex-direction: column;
     height: auto;
@@ -283,14 +283,16 @@ const FilterStyle = styled.div`
     align-items: center;
     padding-bottom: 40px;
     form {
-      flex-direction: row;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
       justify-content: center;
+      align-content: center;
+      align-items: center;
     }
   }
-  @media (max-width: 830px) {
+  @media (max-width: 820px) {
     form {
-      flex-direction: column;
+      grid-template-columns: repeat(1, 1fr);
     }
   }
 `;

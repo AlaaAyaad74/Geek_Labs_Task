@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import { IoMdNotifications } from "react-icons/io";
 
 import { FaAngleDown } from "react-icons/fa6";
 import { IoIosSearch } from "react-icons/io";
 import HeadingStyle from "./HeadingStyle";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 function Heading() {
   const Titles = [
     {
@@ -26,9 +29,12 @@ function Heading() {
       coming: false,
     },
   ];
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <HeadingStyle>
-      <div className="first__line">
+      <div className="first__line" data-aos="fade-down">
         <div className="logo">
           <img src="./logo.png" alt="logo" />
         </div>
@@ -79,7 +85,7 @@ function Heading() {
       </div>
       {/*********Second__Line***********/}
       <SecondLineStyle>
-        <div className="second__line">
+        <div className="second__line" data-aos="fade-up">
           <ul>
             {Titles.map((item, index) => (
               <li key={index}>

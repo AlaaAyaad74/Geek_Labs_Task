@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { styled } from "styled-components";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 function Alerts() {
   const alerts_Array = [
     {
@@ -28,8 +29,11 @@ function Alerts() {
         "$XYZ just announced an acquisition of $ABC at $X. This is an arbitrage opportunity, with the max gain being %X if the deal closes, but the possible risk is %Y  if the deal fails.",
     },
   ];
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
-    <AlertsStyle>
+    <AlertsStyle data-aos="fade-left">
       <div className="alert__cont">
         <div className="head__alert">
           <ul>

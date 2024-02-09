@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Filter from "./Filter";
 import Alerts from "./Alerts";
 import { styled } from "styled-components";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function FilterandAlert() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <MainStyle>
       <Filter />

@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 function Filter() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   const risks = [
     {
       text: "Low risk",
@@ -21,7 +25,7 @@ function Filter() {
     },
   ];
   return (
-    <FilterStyle>
+    <FilterStyle data-aos="fade-right">
       <h1>Filters</h1>
       <form>
         <div className="form__cont">

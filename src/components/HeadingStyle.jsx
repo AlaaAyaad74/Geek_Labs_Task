@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export default styled.div`
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Nunito Sans", sans-serif !important;
   .first__line {
     display: flex;
     align-items: center;

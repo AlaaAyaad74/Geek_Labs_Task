@@ -15,7 +15,7 @@ function FilterandAlert() {
 export default FilterandAlert;
 const MainStyle = styled.div`
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 373.6px 3fr;
   background-color: #181818;
   height: 822px;
   border-radius: 15px;

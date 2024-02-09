@@ -25,7 +25,7 @@ function Filter() {
     },
   ];
   return (
-    <FilterStyle data-aos="fade-right">
+    <FilterStyle data-aos="fade-right" data-aos-duration="2000">
       <h1>Filters</h1>
       <form>
         <div className="form__cont">

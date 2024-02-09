@@ -34,7 +34,11 @@ function Heading() {
   }, []);
   return (
     <HeadingStyle>
-      <div className="first__line" data-aos="fade-down">
+      <div
+        className="first__line"
+        data-aos="fade-down"
+        data-aos-duration="2000"
+      >
         <div className="logo">
           <img src="./logo.png" alt="logo" />
         </div>
@@ -85,7 +89,11 @@ function Heading() {
       </div>
       {/*********Second__Line***********/}
       <SecondLineStyle>
-        <div className="second__line" data-aos="fade-up">
+        <div
+          className="second__line"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
           <ul>
             {Titles.map((item, index) => (
               <li key={index}>

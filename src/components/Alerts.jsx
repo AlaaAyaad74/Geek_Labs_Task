@@ -33,7 +33,7 @@ function Alerts() {
     AOS.init();
   }, []);
   return (
-    <AlertsStyle data-aos="fade-left">
+    <AlertsStyle data-aos="fade-left" data-aos-duration="2000">
       <div className="alert__cont">
         <div className="head__alert">
           <ul>

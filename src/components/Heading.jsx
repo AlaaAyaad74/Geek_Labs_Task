@@ -37,7 +37,7 @@ function Heading() {
       <div
         className="first__line"
         data-aos="fade-down"
-        data-aos-duration="2000"
+        data-aos-duration="1500"
       >
         <div className="logo">
           <img src="./logo.png" alt="logo" />
@@ -92,7 +92,7 @@ function Heading() {
         <div
           className="second__line"
           data-aos="fade-up"
-          data-aos-duration="2000"
+          data-aos-duration="1500"
         >
           <ul>
             {Titles.map((item, index) => (

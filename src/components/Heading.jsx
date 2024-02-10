@@ -88,12 +88,12 @@ function Heading() {
         </div>
       </div>
       {/*********Second__Line***********/}
-      <SecondLineStyle>
-        <div
-          className="second__line"
-          data-aos="fade-up"
-          data-aos-duration="1500"
-        >
+      <SecondLineStyle
+        className="second__line"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      >
+        <div>
           <ul>
             {Titles.map((item, index) => (
               <li key={index}>

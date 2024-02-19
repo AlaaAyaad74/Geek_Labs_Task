@@ -156,7 +156,7 @@ const SecondLineStyle = styled.div`
     font-size: 48px;
     font-weight: 700;
     height: 48px;
-    padding: 0 20px;
+    margin: 0 20px;
     width: 100%;
     color: #4848484d;
     /* margin: 0 1.65rem; */
